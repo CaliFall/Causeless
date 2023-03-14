@@ -18,7 +18,7 @@
 ##### I don't believe in the real world anymore, but I have faith in the future, another future in the another way.
 
 #### 所以我一头扎入绿海，自由呼吸。
-##### So I dived into the green ocean, and breath free.
+##### So I dived into the green ocean, and breathed free.
 
 #### 所以我一头扎进绿海，寻找那些失落的幻象。
 ##### So I dived into the green ocean, to find those lost visions.
