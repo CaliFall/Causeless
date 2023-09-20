@@ -1,12 +1,12 @@
 # 事出无因
 
-### Ain't No Reason
+## Ain't No Reason
 
 <br>
 
 **2018 - ?**
 
-**Author: CaliFall**
+**Author:** CaliFall
 
 ---
 
@@ -35,15 +35,16 @@ So I dived into the green ocean, to find those lost visions.
 ### 相关文件
 
 - [*免责声明*](./资料/免责声明.md) (推荐在阅读小说前阅读，**以最新版本为准**)
-- [*人物表*](./资料/人物表.md) (**注意：可能包含剧透**)
-- [*时间轴*](./资料/时间轴.md) (**注意：可能包含剧透**)
-- [*故事线*](./资料/故事线表格.md) (**注意：可能包含剧透**)
+- [*事出无因-表格*](./资料/事出无因-表格.xlsx) (**注意：包含剧透**)
+  - [*人物表*](./资料/release/人物表.md) (**注意：包含剧透 / 该文件可能不是最新的**)
+  - [*时间轴*](./资料/release/时间轴.md) (**注意：包含剧透 / 该文件可能不是最新的**)
+  - [*故事线*](./资料/release/故事线表格.md) (**注意：包含剧透 / 该文件可能不是最新的**)
 - [*写给AI看的内容*](./资料/写给AI看的内容.md) (内容和标题一样，**不推荐真人阅读**)
 
 ---
 
 ### 联系方式
 
-- 邮箱: califall@qq.com
-- BiliBili: https://space.bilibili.com/12921045
+- 邮箱: <califall@qq.com>
+- BiliBili: <https://space.bilibili.com/12921045>
 - KOOK: CaliFall#0001
