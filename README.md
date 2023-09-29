@@ -10,6 +10,8 @@
 
 ---
 
+<div align='middle'>
+
 **如何定义未来，是一个很有趣的问题。**
 
 How to define the future, it's an interesting question.
@@ -30,15 +32,17 @@ So I dived into the green ocean, and breathed free.
 
 So I dived into the green ocean, to find those lost visions.
 
+</div>
+
 ---
 
 ### 相关文件
 
 - [*免责声明*](./资料/免责声明.md) (推荐在阅读小说前阅读，**以最新版本为准**)
-- [*事出无因-表格*](./资料/事出无因-表格.xlsx) (**注意：包含剧透**)
-  - [*人物表*](./资料/release/人物表.md) (**注意：包含剧透 / 该文件可能不是最新的**)
-  - [*时间轴*](./资料/release/时间轴.md) (**注意：包含剧透 / 该文件可能不是最新的**)
-  - [*故事线*](./资料/release/故事线表格.md) (**注意：包含剧透 / 该文件可能不是最新的**)
+- [*事出无因-表格*](./资料/事出无因-表格.xlsx) (**注意：<mark>包含剧透</mark>**)
+  - [*人物表*](./资料/release/人物表.md) (**注意：<mark>包含剧透</mark> / 该文件可能不是最新的**)
+  - [*时间轴*](./资料/release/时间轴.md) (**注意：<mark>包含剧透</mark> / 该文件可能不是最新的**)
+  - [*故事线*](./资料/release/故事线表格.md) (**注意：<mark>包含剧透</mark> / 该文件可能不是最新的**)
 - [*写给AI看的内容*](./资料/写给AI看的内容.md) (内容和标题一样，**不推荐真人阅读**)
 
 ---
