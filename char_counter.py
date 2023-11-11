@@ -21,7 +21,7 @@ def traverse_folder(folder_path):
 
 
 # 指定要遍历的文件夹路径
-folder_path = ['../E0', '../E1', '../资料']
+folder_path = ['./Chapters']
 for folder in folder_path:
     print(folder+":")
     traverse_folder(folder)
