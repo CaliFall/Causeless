@@ -116,6 +116,9 @@ def compile_chapter(chapter_dict: Dict[int, Chapter], current_chapter_index: int
             else:
                 current_chapter_title_list.append("第{}场".format(current_chapter.index))
 
+            # 在场次中加上章节名
+            current_chapter_title_list.append('《{}》'.format(current_chapter.name))
+
             if current_chapter.scenes[0]:  # 如果存在0号幕次
                 if current_chapter.scenes[0].time:  # 如果0号幕有时间
                     current_chapter_title_list.append(current_chapter.scenes[0].time)
@@ -166,5 +169,5 @@ if __name__ == "__main__":
     chapter_dict = make_chapter_dict(script)  # 从剧本表格生成章节字典
 
     # 编译文件
-    for i in range(57):
+    for i in range(58):
         compile_chapter(chapter_dict, i)
