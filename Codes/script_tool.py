@@ -169,5 +169,5 @@ if __name__ == "__main__":
     chapter_dict = make_chapter_dict(script)  # 从剧本表格生成章节字典
 
     # 编译文件
-    for i in range(58):
+    for i in range(59):
         compile_chapter(chapter_dict, i)
