@@ -29,7 +29,7 @@ def get_chapter_list(chapter_index: int, chapter_name: str) -> list:
     """将一章读取为一个列表"""
     chapter_file_name = "{}-{}.md".format(str(chapter_index).zfill(2), chapter_name)
 
-    with open("./Chapters/" + chapter_file_name, "r", encoding="utf8") as f:
+    with open("../Chapters/" + chapter_file_name, "r", encoding="utf8") as f:
         chapter = f.read()
 
     return chapter.split("\n")
@@ -157,7 +157,7 @@ def compile_chapter(chapter_dict: Dict[int, Chapter], current_chapter_index: int
 
     '''目前为止以及对章节原文完成了标题上的修改，下一步是写入文件'''
 
-    with open("./Chapters/{}-{}.md".format(str(current_chapter.index).zfill(2), current_chapter.name),
+    with open("../Chapters/{}-{}.md".format(str(current_chapter.index).zfill(2), current_chapter.name),
               "w+", encoding="utf8") as f:
         f.write("\n".join(current_chapter_list))
 
@@ -165,7 +165,7 @@ def compile_chapter(chapter_dict: Dict[int, Chapter], current_chapter_index: int
 
 
 if __name__ == "__main__":
-    script = pd.read_excel('./事出无因-表格.xlsx', sheet_name='剧本')  # 从excel文件读取剧本表格
+    script = pd.read_excel('../事出无因-表格.xlsx', sheet_name='剧本')  # 从excel文件读取剧本表格
     chapter_dict = make_chapter_dict(script)  # 从剧本表格生成章节字典
 
     # 编译文件
