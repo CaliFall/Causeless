@@ -157,17 +157,33 @@ def compile_chapter(chapter_dict: Dict[int, Chapter], current_chapter_index: int
 
     '''目前为止以及对章节原文完成了标题上的修改，下一步是写入文件'''
 
+    # 将两行空白改为一行
+    for i in range(len(current_chapter_list)):
+        if current_chapter_list[i] == '<br><br>':
+            current_chapter_list[i] = '<br>'
+
     with open("../Chapters/{}-{}.md".format(str(current_chapter.index).zfill(2), current_chapter.name),
               "w+", encoding="utf8") as f:
         f.write("\n".join(current_chapter_list))
 
-    print("完成了对 {}-{} 的修改，该章节共 {} 幕。".format(str(current_chapter.index).zfill(2), current_chapter.name, scene_title_count))
+    print("完成了对 {}-{} 的修改，该章节共 {} 幕。".format(str(current_chapter.index).zfill(2), current_chapter.name,
+                                                         scene_title_count))
+
+    return current_chapter_list
 
 
 if __name__ == "__main__":
     script = pd.read_excel('../事出无因-表格.xlsx', sheet_name='剧本')  # 从excel文件读取剧本表格
     chapter_dict = make_chapter_dict(script)  # 从剧本表格生成章节字典
 
+    chapters_list = []
+
     # 编译文件
     for i in range(59):
-        compile_chapter(chapter_dict, i)
+        chapters_list = chapters_list \
+                        + compile_chapter(chapter_dict, i) \
+                        + ['<br>', '', '---', '', '<br>', '']
+
+    chapters_list = ['# 常量：事出无因', ''] + chapters_list
+    with open("../《常量：事出无因》.md", "w+", encoding="utf8") as f:
+        f.write("\n".join(chapters_list))
