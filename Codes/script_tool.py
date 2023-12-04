@@ -179,10 +179,10 @@ if __name__ == "__main__":
     chapters_list = []
 
     # 编译文件
-    for i in range(59):
+    for i in range(60):
         chapters_list = chapters_list \
                         + compile_chapter(chapter_dict, i) \
-                        + ['<br>', '', '---', '', '<br>', '']
+                        + ['<br>', '', '<br>', '', '<br>', '']
 
     chapters_list = ['# 常量：事出无因', ''] + chapters_list
     with open("../《常量：事出无因》.md", "w+", encoding="utf8") as f:
