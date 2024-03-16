@@ -103,7 +103,7 @@ def compile_chapter(chapter_dict: Dict[int, Chapter], current_chapter_index: int
 
     current_chapter_list = get_chapter_list(current_chapter.index, current_chapter.name)  # 读取章节为列表
 
-    scene_title_count = 1  # 记录读取到多少个幕次标题，默认1幕
+    scene_title_count = 0  # 记录读取到多少个幕次标题，默认0幕
     for line_index in range(len(current_chapter_list)):  # 按行遍历章节
         line = current_chapter_list[line_index]
 
@@ -135,6 +135,8 @@ def compile_chapter(chapter_dict: Dict[int, Chapter], current_chapter_index: int
 
         elif line.startswith("### "):  # 读取到幕次标题
 
+            scene_title_count += 1  # 将计数+1
+
             current_scene_title_list = ["第{}幕".format(scene_title_count)]  # 当前幕次标题列表
 
             if current_chapter.scenes[scene_title_count]:  # 如果存在对应幕次
@@ -152,8 +154,6 @@ def compile_chapter(chapter_dict: Dict[int, Chapter], current_chapter_index: int
             current_scene_title = "### " + "-".join(current_scene_title_list)  # 拼接幕次标题
 
             current_chapter_list[line_index] = current_scene_title  # 替换幕次标题
-
-            scene_title_count += 1  # 最后将计数+1
 
     '''目前为止以及对章节原文完成了标题上的修改，下一步是写入文件'''
 
@@ -179,7 +179,7 @@ if __name__ == "__main__":
     chapters_list = []
 
     # 编译文件
-    for i in range(62):
+    for i in range(65):
         chapters_list = chapters_list \
                         + compile_chapter(chapter_dict, i) \
                         + ['<br>', '', '<br>', '', '<br>', '']
