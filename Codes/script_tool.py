@@ -185,5 +185,5 @@ if __name__ == "__main__":
                         + ['<br>', '', '<br>', '', '<br>', '']
 
     chapters_list = ['# 常量：事出无因', ''] + chapters_list
-    with open("../《常量：事出无因》.md", "w+", encoding="utf8") as f:
+    with open("../全章节.md", "w+", encoding="utf8") as f:
         f.write("\n".join(chapters_list))
